@@ -45,12 +45,10 @@ public class formServer extends javax.swing.JFrame {
         server = new Server(port, folderPath);
         server.startServer();
     }
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        btnListFileShared = new javax.swing.JButton();
-        btnListUser = new javax.swing.JButton();
-        btnHistory = new javax.swing.JButton();
         Parent = new javax.swing.JPanel();
         firstPanel = new javax.swing.JPanel();
         txtSearch = new javax.swing.JTextField();
@@ -66,75 +64,23 @@ public class formServer extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
         jDateChooser = new com.toedter.calendar.JDateChooser();
-         txtSearchHistory = new javax.swing.JTextField();
+        txtSearchHistory = new javax.swing.JTextField();
         btnSearchHistory = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        btnListFileShared = new javax.swing.JButton();
+        btnListUser = new javax.swing.JButton();
+        btnHistory = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle(" SERVER FORM");
         setBounds(new java.awt.Rectangle(300, 50, 0, 0));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(250, 248, 240));
-
-        btnListFileShared.setBackground(new java.awt.Color(23, 213, 122));
-        btnListFileShared.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnListFileShared.setText("List File Shared");
-        btnListFileShared.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnListFileShared.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnListFileSharedMouseClicked(evt);
-            }
-        });
-
-        btnListUser.setBackground(new java.awt.Color(23, 213, 122));
-        btnListUser.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnListUser.setText("List User ");
-        btnListUser.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnListUser.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnListUserMouseClicked(evt);
-            }
-        });
-
-        btnHistory.setBackground(new java.awt.Color(23, 213, 122));
-        btnHistory.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnHistory.setText("History");
-        btnHistory.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnHistory.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnHistoryMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(btnHistory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnListFileShared, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-                                        .addComponent(btnListUser, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(134, 134, 134)
-                                .addComponent(btnListFileShared, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(50, 50, 50)
-                                .addComponent(btnListUser, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(46, 46, 46)
-                                .addComponent(btnHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         Parent.setLayout(new java.awt.CardLayout());
 
         firstPanel.setBackground(new java.awt.Color(250, 248, 240));
 
-        txtSearch.setFont(new java.awt.Font(" ", 0, 12)); // NOI18N
+        txtSearch.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtSearch.setForeground(new java.awt.Color(153, 153, 153));
 
         btnSearchFile.setBackground(new java.awt.Color(250, 248, 240));
@@ -148,7 +94,6 @@ public class formServer extends javax.swing.JFrame {
                 btnSearchFileMouseClicked(evt);
             }
         });
-
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
                 new Object [][] {
@@ -168,26 +113,28 @@ public class formServer extends javax.swing.JFrame {
         firstPanelLayout.setHorizontalGroup(
                 firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(firstPanelLayout.createSequentialGroup()
-                                .addGap(113, 113, 113)
-                                .addComponent(txtSearch, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnSearchFile, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(134, 134, 134))
-                        .addGroup(firstPanelLayout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(firstPanelLayout.createSequentialGroup()
+                                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGroup(firstPanelLayout.createSequentialGroup()
+                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(btnSearchFile, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(101, 101, 101))))
         );
         firstPanelLayout.setVerticalGroup(
                 firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(firstPanelLayout.createSequentialGroup()
-                                .addGap(28, 28, 28)
+                                .addContainerGap(19, Short.MAX_VALUE)
                                 .addGroup(firstPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnSearchFile, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(55, 55, 55)
+                                .addGap(18, 18, 18)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap())
         );
 
         Parent.add(firstPanel, "card2");
@@ -195,13 +142,14 @@ public class formServer extends javax.swing.JFrame {
         secondPanel.setBackground(new java.awt.Color(250, 248, 240));
         secondPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        txtSearchClient.setFont(new java.awt.Font(" ", 0, 12)); // NOI18N
+        txtSearchClient.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtSearchClient.setForeground(new java.awt.Color(153, 153, 153));
 
         btnSearchClient.setBackground(new java.awt.Color(250, 248, 240));
         btnSearchClient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Search.png"))); // NOI18N
         btnSearchClient.setBorder(null);
         btnSearchClient.setBorderPainted(false);
+        btnSearchClient.setContentAreaFilled(false);
         btnSearchClient.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSearchClientMouseClicked(evt);
@@ -226,28 +174,26 @@ public class formServer extends javax.swing.JFrame {
         secondPanelLayout.setHorizontalGroup(
                 secondPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(secondPanelLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(secondPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(secondPanelLayout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(txtSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(btnSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(159, 159, 159))
-                                        .addGroup(secondPanelLayout.createSequentialGroup()
-                                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addContainerGap(39, Short.MAX_VALUE))))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                        .addGroup(secondPanelLayout.createSequentialGroup()
+                                .addGap(138, 138, 138)
+                                .addComponent(txtSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
         );
         secondPanelLayout.setVerticalGroup(
                 secondPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(secondPanelLayout.createSequentialGroup()
-                                .addGap(37, 37, 37)
-                                .addGroup(secondPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(btnSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(31, 31, 31)
+                                .addContainerGap(17, Short.MAX_VALUE)
+                                .addGroup(secondPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtSearchClient, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnSearchClient, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(40, Short.MAX_VALUE))
+                                .addContainerGap())
         );
 
         Parent.add(secondPanel, "card3");
@@ -277,6 +223,8 @@ public class formServer extends javax.swing.JFrame {
         btnSearchHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Search.png"))); // NOI18N
         btnSearchHistory.setBorder(null);
         btnSearchHistory.setBorderPainted(false);
+        btnSearchHistory.setContentAreaFilled(false);
+
         btnSearchHistory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSearchHistoryMouseClicked(evt);
@@ -290,45 +238,118 @@ public class formServer extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thirdPanelLayout.createSequentialGroup()
                                 .addGroup(thirdPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(thirdPanelLayout.createSequentialGroup()
+                                                .addGap(30, 30, 30)
                                                 .addComponent(jDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(75, 75, 75)
-                                                .addComponent( txtSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(btnSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)
+                                                .addComponent(txtSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(btnSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE))
                                         .addGroup(thirdPanelLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)))
+                                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(39, 39, 39))
         );
         thirdPanelLayout.setVerticalGroup(
                 thirdPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thirdPanelLayout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addGroup(thirdPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(thirdPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                                                .addComponent( txtSearchHistory))
-                                        .addComponent(btnSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                                .addContainerGap(23, Short.MAX_VALUE)
+                                .addGroup(thirdPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thirdPanelLayout.createSequentialGroup()
+                                                .addComponent(btnSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(12, 12, 12))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thirdPanelLayout.createSequentialGroup()
+                                                .addGroup(thirdPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(txtSearchHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)))
                                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(46, 46, 46))
+                                .addContainerGap())
         );
 
         Parent.add(thirdPanel, "card4");
+
+        jPanel2.setBackground(new java.awt.Color(250, 248, 240));
+
+        btnListFileShared.setBackground(new java.awt.Color(250, 248, 240));
+        btnListFileShared.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnListFileShared.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Opened Folder_1.png"))); // NOI18N
+        btnListFileShared.setBorderPainted(false);
+        btnListFileShared.setContentAreaFilled(false);
+        btnListFileShared.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnListFileShared.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnListFileSharedMouseClicked(evt);
+            }
+        });
+
+        btnListUser.setBackground(new java.awt.Color(250, 248, 240));
+        btnListUser.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnListUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Users.png"))); // NOI18N
+        btnListUser.setBorderPainted(false);
+        btnListUser.setContentAreaFilled(false);
+        btnListUser.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnListUser.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnListUserMouseClicked(evt);
+            }
+        });
+
+        btnHistory.setBackground(new java.awt.Color(250, 248, 240));
+        btnHistory.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Time Machine_1.png"))); // NOI18N
+        btnHistory.setBorderPainted(false);
+        btnHistory.setContentAreaFilled(false);
+        btnHistory.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHistory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHistoryMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnListFileShared, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnListUser, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(115, 115, 115))
+        );
+        jPanel2Layout.setVerticalGroup(
+                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(btnListUser, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnListFileShared, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
-                                .addComponent(Parent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(Parent, javax.swing.GroupLayout.PREFERRED_SIZE, 650, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(0, 0, 0)
+                                                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Parent, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, 0)
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(Parent, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -484,14 +505,14 @@ public class formServer extends javax.swing.JFrame {
     private javax.swing.JButton btnSearchHistory;
     private javax.swing.JPanel firstPanel;
     private com.toedter.calendar.JDateChooser jDateChooser;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
-    private javax.swing.JTextField  txtSearchHistory;
+    private javax.swing.JTextField txtSearchHistory;
     private javax.swing.JPanel secondPanel;
     private javax.swing.JPanel thirdPanel;
     private javax.swing.JTextField txtSearch;
